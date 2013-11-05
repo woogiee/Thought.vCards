@@ -1504,7 +1504,7 @@ namespace Thought.vCards
 
                     builder.Append(";ENCODING=BASE64:");
                     builder.Append(EncodeBase64((byte[])property.Value));
-
+	                builder.Append("\n");
                 }
                 else if (valueType == typeof(vCardValueCollection))
                 {
